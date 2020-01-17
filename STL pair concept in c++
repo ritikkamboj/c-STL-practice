@@ -1,0 +1,49 @@
+#include <iostream>
+#include <utility>
+using namespace std;
+int main()
+{
+    // we have to create 4 pairs to understans as given 
+    pair<string, int> p1;
+    pair<string, int> p2("tendulkar",10);
+    pair<string ,int> p3(p2);
+    pair<int, int> p4(5,10);
+    
+    p1=make_pair("ritik",5);
+    cout<<p2.first<<" "<<p2.second<<endl;
+    
+    cout<<"after performing the changes"<<endl;
+    
+    p2.first="rohit";p2.second=45;
+        cout<<p2.first<<" "<<p2.second<<endl;
+        
+        cout<<"to check make_pair work ok or not "<<endl;
+        
+    cout<<p1.first<<" "<<p1.second<<endl;
+    
+    
+    cout<<"toh meine p2 ki value change kar di thi\n"; 
+    
+    cout<<p3.first<<" "<<p3.second<<endl; // answwer comes according to logic kyoki p3 ki value pehle 
+                                            // he assign ho chuki thi , p3 act as a temp;
+                                            
+     cout<<endl;
+     
+     cout<<"we can perform add opertion "<<endl;
+     
+     
+     cout<<p2.second+p4.second<<endl; // 45 and 10
+     
+     cout<<"\n you can perform concatenation "<<endl;
+     cout<<p1.first+p2.first<<endl;
+     
+     cout<<"\n to check swap "<<endl;
+     
+     cout<<"\n before swap p1 ritik and p2 rohit hai"<<endl;
+     
+     swap(p1,p2);
+     cout<<p1.first<<" "<<p2.first<<endl;
+     
+     
+                                            
+}
