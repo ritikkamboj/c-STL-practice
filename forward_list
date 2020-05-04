@@ -1,0 +1,70 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+
+
+
+    forward_list<int> ft1={3,2,1};
+    forward_list<int> ft2={4,5,6};
+
+    // sort , reverse , swap, unique
+cout<<" yeh chapa sort ka ";
+    ft1.sort();
+    for(int &x : ft1)
+    {
+        cout<<x<<" "<<endl;
+    }
+    cout<<"yeh chapa reverse ka";
+    ft2.reverse();
+    for(int &x : ft2)
+    {
+        cout<<x<<endl;
+
+
+    }
+    cout<<"yeh hai unique ka ";
+
+forward_list<int> g={1,1,2,2,3,4,4,5,5};
+g.unique();
+
+for(int &x : g)
+{
+    cout<<x<<" ";
+}
+
+cout<<"yeh hai swap ka ";
+cout<<endl;
+ft1.swap(ft2);
+
+for(int &x : ft1)
+{
+    cout<<x<<" ";
+}
+
+for(int &x : ft2)
+{
+    cout<<x<<" ";
+}
+
+
+// clear and empty 
+
+
+ft1.clear();
+ft2.clear();
+
+if(!ft1.empty())
+{
+    cout<<" khali khai ";
+}
+if(!!ft2.empty())
+{
+    cout<<" khali khai ";
+}
+
+if(false==!ft1.empty())
+cout<<"part2 khali  hai ";
+
+    
+}
